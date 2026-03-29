@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+.idea/
+.git/
+dist/
+web-build/
+coverage/
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+app-example
