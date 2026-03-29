@@ -1,10 +1,30 @@
 {
   "expo": {
-    "scheme": "acme",
+    "name": "Informatix",
+    "slug": "informatix",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "informatix",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "android": {
+      "package": "com.informatix.offlinelearning",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      }
+    },
     "plugins": [
       "expo-router"
     ],
-    "name": "tempapp",
-    "slug": "tempapp"
+    "experiments": {
+      "typedRoutes": false
+    }
   }
 }

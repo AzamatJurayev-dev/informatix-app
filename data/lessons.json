@@ -1,0 +1,386 @@
+[
+  {
+    "id": "innovative-learning-models",
+    "title": "Innovatsion o'qitish modellarining mazmuni",
+    "description": "Informatika ta'limida innovatsion dars modeli qanday qurilishi va nega u samaraliroq ishlashi haqida kirish darsi.",
+    "duration": "9 daqiqa",
+    "category": "Nazariya",
+    "module": "pedagogik-asoslar",
+    "moduleTitle": "Pedagogik asoslar",
+    "moduleDescription": "Innovatsion va interaktiv informatika ta'limining nazariy poydevori.",
+    "level": "Boshlang'ich",
+    "focusArea": "Dars dizayni",
+    "tags": ["innovatsiya", "dars modeli", "ta'lim sifati"],
+    "content": [
+      "Innovatsion dars modeli an'anaviy tushuntirish usulidan farqli ravishda talabani faol ishtirokchi sifatida ko'radi. Bu modelda o'qituvchi faqat ma'lumot beruvchi emas, balki jarayonni boshqaruvchi va yo'naltiruvchi rolni bajaradi.",
+      "Informatika fanida innovatsion model ayniqsa muhim, chunki mavzular ko'pincha abstrakt, texnik va amaliy mashq talab qiladigan xarakterga ega. Shu sababli dars muammo, tadqiqot, muhokama va sinov ketma-ketligida tashkil etiladi.",
+      "Bunday yondashuv o'quvchiga bilimni tayyor qabul qilish o'rniga uni qurish, tekshirish va qo'llash imkonini beradi. Natijada algoritmik fikrlash, tahlil va amaliy ko'nikma bir vaqtda rivojlanadi."
+    ],
+    "advantages": [
+      "Darsning maqsadi, faoliyati va natijasi o'zaro bog'lanadi.",
+      "Talabaning mustaqil va tanqidiy fikrlashi kuchayadi.",
+      "Nazariy ma'lumot amaliy vazifa bilan tez bog'lanadi."
+    ],
+    "classroomApplication": [
+      "Mavzuni real hayotdagi raqamli muammo bilan boshlash.",
+      "Tushuntirishdan keyin qisqa sinov yoki muhokama kiritish.",
+      "Yakunda mini refleksiya yoki mahsulot taqdimotini tashkil qilish."
+    ],
+    "practicalExamples": [
+      "Algoritm mavzusi oldidan kundalik hayotdagi jarayonni bosqichlarga ajratish topshirig'i beriladi.",
+      "Talabalar dars oxirida qaysi vosita mavzuni tushunishga ko'proq yordam berganini yozib chiqadi."
+    ]
+  },
+  {
+    "id": "interactive-teaching-methods",
+    "title": "Interaktiv o'qitish metodlari",
+    "description": "Aqliy hujum, klaster, KWL va case-study kabi metodlarning informatika darsidagi vazifasi.",
+    "duration": "10 daqiqa",
+    "category": "Metodika",
+    "module": "pedagogik-asoslar",
+    "moduleTitle": "Pedagogik asoslar",
+    "moduleDescription": "Innovatsion va interaktiv informatika ta'limining nazariy poydevori.",
+    "level": "Boshlang'ich",
+    "focusArea": "Interaktiv metodlar",
+    "tags": ["muloqot", "hamkorlik", "faollik"],
+    "content": [
+      "Interaktiv metodlar dars jarayonida o'quvchi va o'qituvchi o'rtasidagi ikki tomonlama aloqani kuchaytiradi. Informatika darsida bu ayniqsa muhim, chunki kod, sxema va yechimlarni og'zaki hamda vizual muhokama qilish tushunishni chuqurlashtiradi.",
+      "Metodning to'g'ri tanlanishi mavzuning xususiyatiga bog'liq. Masalan, yangi g'oya yaratishda brainstorming samarali bo'lsa, oldingi bilimlarni faollashtirishda KWL jadvali ko'proq foyda beradi.",
+      "Interaktiv metodlar o'quvchini passiv tinglovchi emas, balki fikr bildiruvchi, dalil keltiruvchi va hamkorlik qiluvchi subyektga aylantiradi."
+    ],
+    "advantages": [
+      "Faollik va darsga jalb etilish kuchayadi.",
+      "O'z fikrini asoslash va himoya qilish ko'nikmasi rivojlanadi.",
+      "Jamoa bilan ishlash va tinglash madaniyati shakllanadi."
+    ],
+    "classroomApplication": [
+      "Yangi dasturlash mavzusidan oldin KWL jadvali to'ldirish.",
+      "Xato kodni guruh bo'lib tahlil qilish.",
+      "Muammo yechimini bir nechta usulda himoya qildirish."
+    ],
+    "practicalExamples": [
+      "Talabalar algoritmning eng maqbul variantini guruhda tanlaydi.",
+      "Klaster usulida kiberxavfsizlik tushunchalari xaritalanadi."
+    ]
+  },
+  {
+    "id": "assessment-and-feedback",
+    "title": "Formatif baholash va tezkor feedback",
+    "description": "Quiz, rubrika, peer review va refleksiya orqali informatika darsida baholash sifatini oshirish.",
+    "duration": "8 daqiqa",
+    "category": "Baholash",
+    "module": "pedagogik-asoslar",
+    "moduleTitle": "Pedagogik asoslar",
+    "moduleDescription": "Innovatsion va interaktiv informatika ta'limining nazariy poydevori.",
+    "level": "O'rta",
+    "focusArea": "Nazorat va tahlil",
+    "tags": ["feedback", "baholash", "refleksiya"],
+    "content": [
+      "Formatif baholash ta'lim jarayonida natijani yakunda emas, o'quv davomida kuzatishga yordam beradi. Informatika fanida bu usul ayniqsa qulay, chunki xatolarni erta aniqlash va tuzatish katta foyda beradi.",
+      "Tezkor feedback quiz, mini test, kod tekshiruvi, peer review va refleksiya savollari orqali berilishi mumkin. Har bir feedback talabaga keyingi qadami nima bo'lishi kerakligini ko'rsatishi lozim.",
+      "Baholashning maqsadi faqat ball qo'yish emas, balki rivojlanish trayektoriyasini ko'rsatishdir. Shu sababli rubrika, mezon va ochiq tavsiya muhim ahamiyatga ega."
+    ],
+    "advantages": [
+      "Xatolar dars jarayonida aniqlanadi va tuzatiladi.",
+      "Talaba o'z kuchli va zaif tomonlarini bilib oladi.",
+      "O'qituvchi keyingi darsni maqsadli rejalashtiradi."
+    ],
+    "classroomApplication": [
+      "Kod yozishdan keyin 3 mezonli rubrika bo'yicha o'zaro tekshiruv qilish.",
+      "Har dars oxirida 1 daqiqalik refleksiya savolini berish.",
+      "Mini quiz natijasiga qarab keyingi mashq darajasini tanlash."
+    ],
+    "practicalExamples": [
+      "SQL so'rovlarini rubrika asosida baholash.",
+      "Peer review orqali veb sahifa maketidagi xatolarni topish."
+    ]
+  },
+  {
+    "id": "algorithmic-thinking",
+    "title": "Algoritmik fikrlashni interaktiv o'qitish",
+    "description": "Algoritm va blok-sxema mavzularini vizual va faol metodlar bilan o'qitish usullari.",
+    "duration": "9 daqiqa",
+    "category": "Dasturlash",
+    "module": "dasturlashni-oqitish",
+    "moduleTitle": "Dasturlashni o'qitish",
+    "moduleDescription": "Kodlash va muammo yechishni o'rgatishda qo'llanadigan zamonaviy pedagogik yondashuvlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "Algoritm",
+    "tags": ["algoritm", "blok-sxema", "muammo yechish"],
+    "content": [
+      "Algoritmik fikrlash informatika ta'limining markaziy ko'nikmalaridan biridir. Uni faqat formulalar yoki ta'riflar orqali emas, jarayonlarni bosqichma-bosqich tahlil qilish orqali o'rgatish samarali bo'ladi.",
+      "Vizual blok-sxemalar, ketma-ketlik kartalari va juftlikdagi mashqlar algoritmni tushunishni soddalashtiradi. Talaba avval mantiqiy oqimni ko'radi, keyin uni kod shakliga o'tkazadi.",
+      "Interaktiv yondashuvlar algoritm tushunchasini abstrakt nazariyadan aniq amaliy vazifaga aylantiradi."
+    ],
+    "advantages": [
+      "Murakkab mantiqiy jarayonlar aniq ko'rinadi.",
+      "Kodga o'tishdan oldin fikrlash bosqichi kuchayadi.",
+      "Talabalar o'z yechimlarini taqqoslashni o'rganadi."
+    ],
+    "classroomApplication": [
+      "Jarayon kartalarini to'g'ri ketma-ketlikka joylashtirish.",
+      "Bir masalani blok-sxema va pseudocode ko'rinishida yechish.",
+      "Algoritmni juftlikda tushuntirish va himoya qilish."
+    ],
+    "practicalExamples": [
+      "Qidiruv algoritmi sinfda qadam-baqadam canli tasvirlanadi.",
+      "Talabalar internetga ulanmasdan flowchart chizib, keyin uni kodga aylantiradi."
+    ]
+  },
+  {
+    "id": "project-based-coding",
+    "title": "Loyiha asosida dasturlashni o'rgatish",
+    "description": "Mini ilova va mahsulot yaratish orqali dasturlashni o'qitishning samarali modeli.",
+    "duration": "11 daqiqa",
+    "category": "Dasturlash",
+    "module": "dasturlashni-oqitish",
+    "moduleTitle": "Dasturlashni o'qitish",
+    "moduleDescription": "Kodlash va muammo yechishni o'rgatishda qo'llanadigan zamonaviy pedagogik yondashuvlar.",
+    "level": "O'rta",
+    "focusArea": "Loyiha asosida ta'lim",
+    "tags": ["loyiha", "kod", "mahsulot"],
+    "content": [
+      "Loyiha asosida ta'lim dasturlashni o'rgatishda eng kuchli yondashuvlardan biridir, chunki talaba kodni maqsadli mahsulot yaratish jarayonida o'rganadi.",
+      "Bunda o'quv vazifasi kichik bo'linmalarga ajratiladi: muammoni tushunish, yechim rejasini tuzish, kod yozish, test qilish va taqdim etish. Har bosqichda feedback berilishi lozim.",
+      "Talaba faqat sintaksisni emas, balki dizayn, foydalanuvchi ehtiyoji va natijani baholashni ham o'rganadi."
+    ],
+    "advantages": [
+      "Kod yozish maqsad bilan bog'lanadi.",
+      "Talabada mahsulot fikrlashi shakllanadi.",
+      "Mustaqil izlanish va javobgarlik ortadi."
+    ],
+    "classroomApplication": [
+      "Kalkulyator, test ilovasi yoki eslatma dasturi yaratish.",
+      "Sprint usulida har dars yakunida kichik natija olish.",
+      "Juftlik yoki kichik guruhda modul bo'lib ishlash."
+    ],
+    "practicalExamples": [
+      "Talabalar foydalanuvchi uchun oddiy mobil test ilovasini loyihalaydi.",
+      "Bir guruh interfeys, ikkinchi guruh logika qismi ustida ishlaydi."
+    ]
+  },
+  {
+    "id": "debugging-and-peer-review",
+    "title": "Debugging va peer review madaniyati",
+    "description": "Xatolarni topish, tahlil qilish va hamkorlikda tuzatish orqali kod sifati va fikrlashni rivojlantirish.",
+    "duration": "8 daqiqa",
+    "category": "Dasturlash",
+    "module": "dasturlashni-oqitish",
+    "moduleTitle": "Dasturlashni o'qitish",
+    "moduleDescription": "Kodlash va muammo yechishni o'rgatishda qo'llanadigan zamonaviy pedagogik yondashuvlar.",
+    "level": "O'rta",
+    "focusArea": "Xatolar bilan ishlash",
+    "tags": ["debugging", "peer review", "kod sifati"],
+    "content": [
+      "Dasturlashni o'rganishda xato qilish tabiiy jarayondir. Muhimi, xatoni qanday tahlil qilish va undan o'rganishni yo'lga qo'yishdir.",
+      "Debuggingni o'qitishda tayyor to'g'ri javobni berish o'rniga, xatoni aniqlash bosqichlarini ko'rsatish samaraliroq. Masalan, muammoni qayta ishlab chiqish, logikani tekshirish va test holatlarini ko'rib chiqish.",
+      "Peer review esa talabaga boshqa yechimlarni ko'rish, o'z ishiga tanqidiy qarash va professional muloqot madaniyatini o'rganish imkonini beradi."
+    ],
+    "advantages": [
+      "Koddagi xatolarga nisbatan qo'rquv kamayadi.",
+      "Tahlil va tekshirish ko'nikmalari kuchayadi.",
+      "Hamkorlik va sifat nazorati madaniyati shakllanadi."
+    ],
+    "classroomApplication": [
+      "Noto'g'ri kod namunalarini birgalikda tahlil qilish.",
+      "Peer review uchun qisqa checklist berish.",
+      "Test holatlarini talabalar bilan birga tuzish."
+    ],
+    "practicalExamples": [
+      "Funksiya nega noto'g'ri natija qaytarayotganini guruh bo'lib topish.",
+      "HTML/CSS loyihasini juftlikda tekshirib, tavsiyalar berish."
+    ]
+  },
+  {
+    "id": "html-css-teaching",
+    "title": "HTML va CSS ni bosqichma-bosqich o'qitish",
+    "description": "Veb sahifa tuzilishi va dizaynini ko'rgazmali va amaliy mashqlar orqali o'rgatish yo'llari.",
+    "duration": "9 daqiqa",
+    "category": "Veb dasturlash",
+    "module": "web-dasturlash",
+    "moduleTitle": "Veb dasturlashni o'qitish",
+    "moduleDescription": "HTML, CSS va JavaScript mavzularini interaktiv va mahsulotga yo'naltirilgan tarzda o'rgatish.",
+    "level": "Boshlang'ich",
+    "focusArea": "HTML/CSS",
+    "tags": ["html", "css", "veb dizayn"],
+    "content": [
+      "Veb dasturlashni o'qitishda HTML va CSS ko'pincha birinchi kirish mavzulari hisoblanadi. Shu bois talabaga strukturani va ko'rinishni alohida tushuntirish muhim.",
+      "HTMLni mazmun va semantika nuqtayi nazaridan, CSSni esa vizual kompozitsiya va uslub nuqtayi nazaridan tushuntirish darsni aniqroq qiladi.",
+      "Ko'rgazmali preview, tayyor layoutni tahlil qilish va kichik bloklarni mustaqil yig'ish usullari bu mavzuni osonlashtiradi."
+    ],
+    "advantages": [
+      "Talaba natijani darhol ko'radi.",
+      "Nazariya va amaliyot bir vaqtda ishlaydi.",
+      "Vizual fikrlash va dizayn sezgisi rivojlanadi."
+    ],
+    "classroomApplication": [
+      "Sahifa skeletini tayyor bloklardan yig'ish.",
+      "Bir xil HTML uchun turli CSS yechimlarini taqqoslash.",
+      "Har darsda bitta komponent: header, card, footer yaratish."
+    ],
+    "practicalExamples": [
+      "Talabalar portfolio sahifasining kirish qismini ishlab chiqadi.",
+      "Tayyor maketdan foydalangan holda responsive card yaratiladi."
+    ]
+  },
+  {
+    "id": "javascript-interactivity",
+    "title": "JavaScript orqali interaktivlikni o'rgatish",
+    "description": "Event, DOM va foydalanuvchi bilan ishlashni kichik amaliy vazifalar bilan tushuntirish.",
+    "duration": "10 daqiqa",
+    "category": "Veb dasturlash",
+    "module": "web-dasturlash",
+    "moduleTitle": "Veb dasturlashni o'qitish",
+    "moduleDescription": "HTML, CSS va JavaScript mavzularini interaktiv va mahsulotga yo'naltirilgan tarzda o'rgatish.",
+    "level": "O'rta",
+    "focusArea": "JavaScript",
+    "tags": ["javascript", "dom", "event"],
+    "content": [
+      "JavaScript talabaga sahifa bilan muloqot qilish imkonini beradi. Shu sababli bu mavzuni nazariyadan ko'ra interaktiv demo va tajriba orqali o'qitish samaraliroq.",
+      "Oddiy tugma, input, quiz yoki filter kabi elementlar DOM va event tushunchasini tez tushuntiradi. Talaba har bir qatorning natijasini brauzerda ko'rib boradi.",
+      "Murakkab konseptlar kichik modul vazifalarga bo'linganda qo'rqinchli emas, balki qiziqarli ko'rinadi."
+    ],
+    "advantages": [
+      "Natija darhol ko'rinadi va motivatsiya oshadi.",
+      "Abstrakt tushunchalar amaliy harakatga aylanadi.",
+      "Talaba sinov va xatodan qo'rqmaydi."
+    ],
+    "classroomApplication": [
+      "Button click va input validation mini mashqlari.",
+      "DOM elementlar bilan ishlashni komponentlarga bo'lib o'qitish.",
+      "Har dars oxirida ishlaydigan kichik interaktiv blok tayyorlash."
+    ],
+    "practicalExamples": [
+      "Quiz kartasi va ball hisoblash funksiyasini yaratish.",
+      "Qidiruv oynasi orqali elementlarni filtrlash."
+    ]
+  },
+  {
+    "id": "web-project-collaboration",
+    "title": "Veb loyiha va jamoaviy ishlash",
+    "description": "Web sahifa yaratishda rollar, feedback va taqdimot asosida hamkorlikni tashkil qilish.",
+    "duration": "8 daqiqa",
+    "category": "Veb dasturlash",
+    "module": "web-dasturlash",
+    "moduleTitle": "Veb dasturlashni o'qitish",
+    "moduleDescription": "HTML, CSS va JavaScript mavzularini interaktiv va mahsulotga yo'naltirilgan tarzda o'rgatish.",
+    "level": "O'rta",
+    "focusArea": "Hamkorlik",
+    "tags": ["jamoa", "portfolio", "taqdimot"],
+    "content": [
+      "Veb loyiha yaratish jarayonida hamkorlik ko'nikmasi alohida ahamiyatga ega. Bir guruh dizayn, ikkinchisi kontent, uchinchisi interaktivlik ustida ishlashi mumkin.",
+      "Bunday taqsimot talabalarni real ish jarayoniga yaqinlashtiradi. Ular muloqot qilish, vazifa bo'lish, deadline saqlash va yakuniy mahsulotni himoya qilishni o'rganadi.",
+      "O'qituvchi jarayon davomida checkpoint, rubrika va oraliq demo orqali jamoani boshqaradi."
+    ],
+    "advantages": [
+      "Hamkorlik va liderlik ko'nikmasi rivojlanadi.",
+      "Murakkab loyiha kichik vazifalarga bo'linadi.",
+      "Taqdimot va himoya tajribasi shakllanadi."
+    ],
+    "classroomApplication": [
+      "Portfolio yoki ta'limiy landing page yaratish.",
+      "Rollarni oldindan belgilash: dizayn, layout, logic, content.",
+      "Oraliq demo va yakuniy taqdimot tashkil qilish."
+    ],
+    "practicalExamples": [
+      "Guruh veb portfolio yaratib, har modul uchun javobgar a'zoni belgilaydi.",
+      "Yakuniy taqdimotda UI, kod va foydalanuvchi qulayligi alohida baholanadi."
+    ]
+  },
+  {
+    "id": "network-visualization",
+    "title": "Kompyuter tarmoqlarini vizual o'qitish",
+    "description": "Tarmoq topologiyasi, paket almashinuvi va qurilmalar ishlashini diagramma va simulyatsiya bilan tushuntirish.",
+    "duration": "9 daqiqa",
+    "category": "Tarmoqlar",
+    "module": "tarmoq-va-xavfsizlik",
+    "moduleTitle": "Tarmoqlar va kiberxavfsizlik",
+    "moduleDescription": "Tarmoq, xavfsizlik va ma'lumotlar bilan ishlash mavzularini ko'rgazmali va interaktiv usulda o'qitish.",
+    "level": "Boshlang'ich",
+    "focusArea": "Tarmoq asoslari",
+    "tags": ["tarmoq", "diagramma", "simulyatsiya"],
+    "content": [
+      "Kompyuter tarmoqlari mavzusi ko'p talabalar uchun abstrakt tuyuladi, chunki undagi jarayonlar ko'zga ko'rinmaydi. Shu bois vizual yondashuv zarur.",
+      "Topologiyalar, qurilmalar roli va paket almashinuvi diagramma, stikerlar, kartalar yoki animatsiya orqali ko'rsatilsa, tushunish ancha yengillashadi.",
+      "Interaktiv faoliyatlar talabaning faqat eslab qolishiga emas, balki tizim sifatida tushunishiga yordam beradi."
+    ],
+    "advantages": [
+      "Abstrakt texnik jarayonlar aniq ko'rinadi.",
+      "Murakkab tushunchalar sodda bosqichlarga ajraladi.",
+      "Talaba topologiyalarni taqqoslay oladi."
+    ],
+    "classroomApplication": [
+      "Qurilmalar roli bo'yicha role-play tashkil qilish.",
+      "Tarmoq topologiyasini kartalar bilan yig'ish.",
+      "Paket yo'nalishini stiker yoki chiziqlar orqali ko'rsatish."
+    ],
+    "practicalExamples": [
+      "Talabalar LAN va WAN ni vizual xarita asosida farqlaydi.",
+      "Router, switch va server vazifalari canli sxema bilan tushuntiriladi."
+    ]
+  },
+  {
+    "id": "cybersecurity-awareness",
+    "title": "Kiberxavfsizlikni hayotiy vaziyatlar orqali o'qitish",
+    "description": "Phishing, parol, ijtimoiy muhandislik va shaxsiy ma'lumotlarni himoya qilishni case-study asosida o'rgatish.",
+    "duration": "8 daqiqa",
+    "category": "Xavfsizlik",
+    "module": "tarmoq-va-xavfsizlik",
+    "moduleTitle": "Tarmoqlar va kiberxavfsizlik",
+    "moduleDescription": "Tarmoq, xavfsizlik va ma'lumotlar bilan ishlash mavzularini ko'rgazmali va interaktiv usulda o'qitish.",
+    "level": "Boshlang'ich",
+    "focusArea": "Kiberxavfsizlik",
+    "tags": ["phishing", "parol", "case-study"],
+    "content": [
+      "Kiberxavfsizlik mavzusi quruq ta'riflar bilan emas, hayotiy vaziyatlar orqali o'qitilganda samaraliroq bo'ladi. Talaba xavfni ko'rishi, tahlil qilishi va to'g'ri qaror qabul qilishni mashq qilishi kerak.",
+      "Case-study, true/false, scenario tahlili va guruh muhokamasi bu mavzu uchun juda qulay metodlardir.",
+      "Kiberxavfsizlik darsining maqsadi faqat bilim emas, balki raqamli xulq-atvor madaniyatini shakllantirishdir."
+    ],
+    "advantages": [
+      "Mavzu real hayot bilan bog'lanadi.",
+      "Talabaning hushyorligi va mas'uliyati oshadi.",
+      "Noto'g'ri qaror oqibatlarini oldindan ko'rish mumkin bo'ladi."
+    ],
+    "classroomApplication": [
+      "Soxta xabar va phishing namunasini tahlil qilish.",
+      "Parol xavfsizligini kichik test orqali tekshirish.",
+      "Kiberxavf ssenariysini guruhda yechish."
+    ],
+    "practicalExamples": [
+      "Talabalar qaysi e-mail ishonchli ekanini dalillar bilan tanlaydi.",
+      "Kuchli parol mezonlari bo'yicha tezkor musobaqa o'tkaziladi."
+    ]
+  },
+  {
+    "id": "data-literacy-projects",
+    "title": "Ma'lumotlar bilan ishlash va raqamli savodxonlik",
+    "description": "Jadval, diagramma va raqamli tahlil mavzularini loyiha va amaliy topshiriqlar bilan o'qitish.",
+    "duration": "9 daqiqa",
+    "category": "Ma'lumotlar",
+    "module": "tarmoq-va-xavfsizlik",
+    "moduleTitle": "Tarmoqlar va kiberxavfsizlik",
+    "moduleDescription": "Tarmoq, xavfsizlik va ma'lumotlar bilan ishlash mavzularini ko'rgazmali va interaktiv usulda o'qitish.",
+    "level": "O'rta",
+    "focusArea": "Raqamli savodxonlik",
+    "tags": ["jadval", "diagramma", "data literacy"],
+    "content": [
+      "Raqamli savodxonlik faqat kompyuter ishlatishni bilish emas, balki ma'lumotni tushunish, tahlil qilish va mas'uliyatli qo'llashni ham anglatadi.",
+      "Jadval, diagramma va hisobotlar bilan ishlash mavzulari loyiha shaklida berilganda talaba ularning amaliy ahamiyatini yaxshiroq ko'radi.",
+      "O'qituvchi ma'lumotni yig'ish, tozalash, tasvirlash va xulosa chiqarish bosqichlarini ketma-ket tashkil etishi kerak."
+    ],
+    "advantages": [
+      "Talaba raqamli ma'lumotni tanqidiy ko'rishni o'rganadi.",
+      "Analitik fikrlash va taqdimot ko'nikmasi rivojlanadi.",
+      "Nazariya real hisobot yoki jadval bilan bog'lanadi."
+    ],
+    "classroomApplication": [
+      "Oddiy so'rovnoma natijalarini jadvalga kiritish.",
+      "Diagramma asosida xulosa chiqarish mashqlarini berish.",
+      "Mini data loyiha bilan yakuniy taqdimot o'tkazish."
+    ],
+    "practicalExamples": [
+      "Talabalar guruh bo'yicha internetdan foydalanish statistikasi ustida ishlaydi.",
+      "Excel yoki qurilmadagi vosita yordamida grafik chizib, xulosa himoya qiladi."
+    ]
+  }
+]

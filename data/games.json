@@ -1,0 +1,67 @@
+{
+  "matchingPairs": [
+    {
+      "id": "m1",
+      "term": "Aqliy hujum",
+      "definition": "Baholashdan oldin ko'plab g'oyalarni yig'ish"
+    },
+    {
+      "id": "m2",
+      "term": "Gamifikatsiya",
+      "definition": "Ta'limda ball, daraja yoki mukofotlardan foydalanish"
+    },
+    {
+      "id": "m3",
+      "term": "KWL / BBB",
+      "definition": "Avvalgi bilim, savollar va natijalarni kuzatish"
+    },
+    {
+      "id": "m4",
+      "term": "Case Study",
+      "definition": "Haqiqiy ta'limiy yoki texnik vaziyatni tahlil qilish"
+    },
+    {
+      "id": "m5",
+      "term": "Flashcard metodi",
+      "definition": "Kartochkalar orqali tez eslab qolish va takrorlash"
+    }
+  ],
+  "trueFalseStatements": [
+    {
+      "id": "tf1",
+      "statement": "Gamifikatsiya faqat ko'ngilochar bo'lishi kerak va unga o'quv maqsadi kerak emas.",
+      "answer": false,
+      "explanation": "Gamifikatsiya aniq o'quv maqsadlarini qo'llab-quvvatlagandagina samarali bo'ladi."
+    },
+    {
+      "id": "tf2",
+      "statement": "Interaktiv metodlar informatika darslarida ishtirokni oshirishi mumkin.",
+      "answer": true,
+      "explanation": "Interaktiv yondashuvlar talaba faolligi va muloqotni kuchaytiradi."
+    },
+    {
+      "id": "tf3",
+      "statement": "Offline ta'lim ilovalari progressni qurilmada saqlay olmaydi.",
+      "answer": false,
+      "explanation": "Bunday ilovalar AsyncStorage kabi qurilma ichidagi saqlash mexanizmlaridan foydalana oladi."
+    },
+    {
+      "id": "tf4",
+      "statement": "Case study nazariyani real vaziyatlar bilan bog'lashga yordam beradi.",
+      "answer": true,
+      "explanation": "Bu metodning asosiy pedagogik afzalliklaridan biri nazariya va amaliy holatni uyg'unlashtirishdir."
+    },
+    {
+      "id": "tf5",
+      "statement": "Flashcardlar informatika terminlarini takrorlash uchun foydasiz.",
+      "answer": false,
+      "explanation": "Flashcardlar termin va tushunchalarni yodga tushirishda juda qulay vositadir."
+    },
+    {
+      "id": "tf6",
+      "statement": "Agar ma'lumotlar qurilmada saqlansa, offline mobil ilova internet bo'lmasa ham o'qishni qo'llab-quvvatlay oladi.",
+      "answer": true,
+      "explanation": "Offline-first ilovalar tayyor darslar va qurilma ichidagi saqlash yordamida to'liq ishlaydi."
+    }
+  ]
+}

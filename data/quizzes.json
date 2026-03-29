@@ -1,0 +1,146 @@
+[
+  {
+    "id": "q1",
+    "question": "Informatikani o'qitishda innovatsion yondashuvning asosiy maqsadi nima?",
+    "options": [
+      "Barcha o'qituvchilarni texnologiya bilan almashtirish",
+      "Talabalarni faqat tinglovchiga aylantirish",
+      "Faol, mazmunli va moslashuvchan ta'limni yaratish",
+      "Amaliy mashg'ulotlardan voz kechish"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Innovatsion yondashuv faol ishtirok, moslashuvchanlik va amaliy mazmunga tayangan ta'lim muhitini yaratishga xizmat qiladi."
+  },
+  {
+    "id": "q2",
+    "question": "Dars boshida ko'plab g'oyalarni yig'ish uchun qaysi metod ayniqsa qulay?",
+    "options": [
+      "Aqliy hujum",
+      "Yakuniy imtihon",
+      "Jimgina ko'chirib yozish",
+      "Faqat ma'ruza"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aqliy hujum baholashdan oldin ko'plab g'oyalarni tez yig'ish va talabani darsga jalb etish uchun ishlatiladi."
+  },
+  {
+    "id": "q3",
+    "question": "Nima uchun multimedia resurslari informatika darslarida samarali hisoblanadi?",
+    "options": [
+      "Ular tushuntirishni butunlay keraksiz qiladi",
+      "Ular texnik jarayonlarni ko'rgazmali qiladi",
+      "Ular faqat internetda ishlaydi",
+      "Ular talaba ishtirokini kamaytiradi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vizual va multimodal resurslar murakkab texnik jarayonlarni aniqroq va tezroq tushuntirishga yordam beradi."
+  },
+  {
+    "id": "q4",
+    "question": "Qaysi yondashuv darsni tayyor nazariyadan emas, muhim muammo bilan boshlaydi?",
+    "options": [
+      "Muammoli ta'lim",
+      "Tasodifiy taxmin qilish",
+      "Faqat yodlashga asoslangan o'qitish",
+      "Davomatni tekshirish"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Muammoli ta'lim o'rganish jarayonini muammo bilan boshlaydi va yechim izlashni faollashtiradi."
+  },
+  {
+    "id": "q5",
+    "question": "Gamifikatsiya ta'lim jarayoniga nimani qo'shadi?",
+    "options": [
+      "Faqat maqsadsiz ko'ngilocharlikni",
+      "Ballar, missiyalar va progress indikatorlarini",
+      "Yana uzunroq ma'ruzalarni",
+      "Kamroq fikr-mulohazani"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gamifikatsiya ball, daraja, topshiriq va rag'bat kabi motivatsion elementlar orqali talabani jarayonga faolroq jalb etadi."
+  },
+  {
+    "id": "q6",
+    "question": "KWL yoki BBB jadvali nimani kuzatishga yordam beradi?",
+    "options": [
+      "Faqat uy vazifasi muddatlarini",
+      "Nimani biladi, nimani bilmoqchi va nimani o'rgandi",
+      "Faqat test ballarini",
+      "Faqat davomatni"
+    ],
+    "correctAnswer": 1,
+    "explanation": "KWL/BBB jadvali avvalgi bilim, o'rganish ehtiyoji va yakuniy natijani ko'rsatadi."
+  },
+  {
+    "id": "q7",
+    "question": "Quyidagilardan qaysi biri offline mobil ta'limni eng yaxshi qo'llab-quvvatlaydi?",
+    "options": [
+      "Serverga qaram loginli ilova",
+      "Ilova ichida saqlangan quiz va flashcardlar",
+      "Doimiy bulut sinxronizatsiyasi",
+      "Faqat stream qilinadigan video darslar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Offline mobil ta'lim uchun kontent va foydalanuvchi natijalari qurilmaning o'zida saqlanishi kerak."
+  },
+  {
+    "id": "q8",
+    "question": "Hamkorlikda o'qitishning informatika uchun muhim foydasi nima?",
+    "options": [
+      "Talabalar mustaqil fikrlamay qo'yadi",
+      "U real raqamli loyihalardagi jamoaviy ishni aks ettiradi",
+      "O'qituvchi yo'riqnomasini butunlay bekor qiladi",
+      "Munozarani cheklaydi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hamkorlikda o'qitish real loyiha muhitidagi jamoaviy ishlash ko'nikmalarini rivojlantiradi."
+  },
+  {
+    "id": "q9",
+    "question": "Flashcard metodini eng to'g'ri tavsiflovchi javob qaysi?",
+    "options": [
+      "Tez eslab qolish va takrorlash uchun qulay vosita",
+      "Faqat baholash uchun kerakli vosita",
+      "Terminlar uchun umuman mos emas",
+      "Internetga to'liq bog'liq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flashcardlar takrorlash, yodga tushirish va mustaqil tekshiruv uchun juda qulay vositadir."
+  },
+  {
+    "id": "q10",
+    "question": "Nima uchun interaktiv sinf muhiti informatika darslarida muhim?",
+    "options": [
+      "Chunki talabalar faqat tinglash orqali yaxshi o'rganadi",
+      "Chunki debugging va tajriba faol ishtirokni talab qiladi",
+      "Chunki nazariya amaliyotga tatbiq etilmasligi kerak",
+      "Chunki bundan faqat kuchli talabalar foyda ko'radi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Informatika fanida sinov, tahlil, muhokama va amaliy qo'llash orqali chuqurroq o'rganish yuz beradi."
+  },
+  {
+    "id": "q11",
+    "question": "Yakuniy ta'limiy mahsulot yaratish uchun qaysi metod eng mos?",
+    "options": [
+      "Loyiha asosida o'qitish",
+      "Fikr-mulohazani e'tiborsiz qoldirish",
+      "Bir yoqlama ma'ruza",
+      "Tartibsiz taxmin qilish"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Loyiha asosida o'qitish bosqichma-bosqich yakuniy mahsulot yaratishga olib keladi."
+  },
+  {
+    "id": "q12",
+    "question": "Offline ta'lim ilovalarida progressni saqlash uchun nima ishlatilishi kerak?",
+    "options": [
+      "Faqat masofaviy SQL bazalari",
+      "AsyncStorage kabi qurilma ichidagi saqlash vositalari",
+      "Majburiy login sessiyalari",
+      "Doim ishlaydigan backend server"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Offline ilovalarda foydalanuvchi holati va natijalari AsyncStorage kabi qurilma ichidagi saqlash vositalari orqali saqlanadi."
+  }
+]

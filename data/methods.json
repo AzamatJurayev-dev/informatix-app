@@ -1,0 +1,352 @@
+[
+  {
+    "id": "brainstorming",
+    "name": "Aqliy hujum",
+    "summary": "Muammo bo'yicha ko'plab g'oyalarni tez yig'ish va dastlabki yechimlarni topish metodi.",
+    "group": "goya-va-faollashtirish",
+    "groupTitle": "G'oya va faollashtirish metodlari",
+    "groupDescription": "Dars boshida talabani fikrlashga jalb etish va yangi g'oya yaratishga yordam beradigan metodlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "G'oya yaratish",
+    "tags": ["aqliy hujum", "faollik", "g'oya"],
+    "description": [
+      "Aqliy hujum talabalarni dastlabki bosqichda erkin fikr bildirishga undaydi va tanqidni vaqtincha chetga suradi.",
+      "Informatika darslarida bu metod loyiha g'oyasi, interfeys dizayni, algoritm varianti yoki texnologik muammoni yechishda ayniqsa foydalidir."
+    ],
+    "advantages": [
+      "Ijodkorlik va tezkor fikrlashni kuchaytiradi.",
+      "Oldingi bilimlarni faollashtiradi.",
+      "Guruh muhokamasiga tabiiy kirish yaratadi."
+    ],
+    "disadvantages": [
+      "Keyingi tahlilsiz g'oyalar yuzaki qolishi mumkin.",
+      "Sokin talabalar ishtiroki kamayib ketmasligi uchun moderatsiya zarur."
+    ],
+    "useCase": [
+      "Kiberxavfsizlik bo'yicha mobil ilova g'oyalarini yig'ish.",
+      "Dasturlash loyihasi uchun foydalanuvchi muammolarini aniqlash."
+    ],
+    "whenToUse": [
+      "Yangi mavzu yoki loyiha boshida.",
+      "Muammo yechimining turli variantlarini topishda."
+    ],
+    "educationalValue": [
+      "Talabaning xato javob berishdan qo'rqmasdan fikr bildirishi uchun xavfsiz muhit yaratadi."
+    ]
+  },
+  {
+    "id": "clustering",
+    "name": "Klaster",
+    "summary": "Asosiy tushuncha atrofida bog'liq atamalar va g'oyalarni vizual guruhlash metodi.",
+    "group": "goya-va-faollashtirish",
+    "groupTitle": "G'oya va faollashtirish metodlari",
+    "groupDescription": "Dars boshida talabani fikrlashga jalb etish va yangi g'oya yaratishga yordam beradigan metodlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "Tushunchalarni tizimlash",
+    "tags": ["klaster", "vizual", "xaritalash"],
+    "description": [
+      "Klasterlash markaziy tushuncha bilan unga bog'liq fikr va terminlar o'rtasidagi aloqani ko'rgazmali ko'rsatadi.",
+      "Informatika fanida kompyuter qurilmalari, tarmoq elementlari, algoritm turlari yoki dasturlash atamalarini tizimlashtirishda juda foydali."
+    ],
+    "advantages": [
+      "Tushunchalarni tartibga soladi.",
+      "Vizual fikrlashni qo'llab-quvvatlaydi.",
+      "Takrorlash va umumlashtirish uchun qulay."
+    ],
+    "disadvantages": [
+      "Murakkab texnik bog'lanishlar haddan tashqari soddalashtirilishi mumkin.",
+      "To'g'ri guruhlash uchun o'qituvchining yo'naltirishi kerak bo'ladi."
+    ],
+    "useCase": [
+      "Algoritm turlarini klaster sxemasi orqali taqqoslash.",
+      "Kompyuter tarmog'i elementlarini guruhlash."
+    ],
+    "whenToUse": [
+      "Mavzuni kirishda.",
+      "Takrorlash va yakuniy xulosada."
+    ],
+    "educationalValue": [
+      "Alohida faktlarni umumiy konsept bilan bog'lash ko'nikmasini rivojlantiradi."
+    ]
+  },
+  {
+    "id": "kwl",
+    "name": "KWL / BBB",
+    "summary": "Talaba nimani bilishi, nimani bilmoqchi bo'lishi va nimani o'rganganini ko'rsatadigan reflektiv metod.",
+    "group": "goya-va-faollashtirish",
+    "groupTitle": "G'oya va faollashtirish metodlari",
+    "groupDescription": "Dars boshida talabani fikrlashga jalb etish va yangi g'oya yaratishga yordam beradigan metodlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "Refleksiya",
+    "tags": ["kwl", "bbb", "refleksiya"],
+    "description": [
+      "KWL/BBB jadvali darsni uch bosqichda tashkil etadi: mavjud bilim, o'rganish ehtiyoji va yakuniy xulosa.",
+      "Bu metod yangi texnologiya, platforma yoki dasturiy vosita mavzularida ayniqsa samarali bo'ladi."
+    ],
+    "advantages": [
+      "Avvalgi bilimlarni faollashtiradi.",
+      "Refleksiya va o'zini baholashni kuchaytiradi.",
+      "O'sishni ko'rinadigan qiladi."
+    ],
+    "disadvantages": [
+      "Ba'zi talabalar boshlang'ich bilimini ifodalashda qiynalishi mumkin.",
+      "Mazmunli yakun uchun yetarli vaqt ajratilishi kerak."
+    ],
+    "useCase": [
+      "Bulutli texnologiyalar mavzusidan oldin va keyin jadvalni to'ldirish.",
+      "Dasturlash bo'yicha yangi kutubxona o'rganilishidan oldin savollarni yig'ish."
+    ],
+    "whenToUse": [
+      "Yangi bo'lim boshida.",
+      "Dars oxiridagi refleksiyada."
+    ],
+    "educationalValue": [
+      "Metakognitiv fikrlash va maqsadli o'rganishni rivojlantiradi."
+    ]
+  },
+  {
+    "id": "case-study",
+    "name": "Case Study",
+    "summary": "Haqiqiy vaziyatni tahlil qilish va dalil asosida yechim taklif etishga qaratilgan metod.",
+    "group": "tahlil-va-muammo",
+    "groupTitle": "Tahlil va muammo yechish metodlari",
+    "groupDescription": "Talabani real vaziyat, muammo va qaror qabul qilish jarayoniga olib kiradigan metodlar.",
+    "level": "O'rta",
+    "focusArea": "Vaziyat tahlili",
+    "tags": ["case study", "tahlil", "qaror"],
+    "description": [
+      "Case study metodida talabalar hayotiy yoki kasbiy vaziyatni tahlil qilib, muammoning sabab va oqibatlarini ko'rib chiqadi.",
+      "Informatika fanida bu metod xavfsizlik xatosi, tizim nosozligi, ma'lumot yo'qolishi yoki foydalanuvchi muammosi bilan bog'liq mavzularda samarali."
+    ],
+    "advantages": [
+      "Nazariyani real vaziyat bilan bog'laydi.",
+      "Tahliliy fikrlashni rivojlantiradi.",
+      "Dalilga tayangan muhokama madaniyatini shakllantiradi."
+    ],
+    "disadvantages": [
+      "Yaxshi ssenariy tayyorlash vaqt talab qiladi.",
+      "Muhokamani maqsadga yo'naltirish uchun fasilitatsiya zarur."
+    ],
+    "useCase": [
+      "Maktab tarmog'ida xavfsizlik muammosi yuz bergan vaziyatni tahlil qilish.",
+      "Ma'lumotlar bazasidagi xatoni bartaraf etish bo'yicha qaror ishlab chiqish."
+    ],
+    "whenToUse": [
+      "Amaliy ahamiyatga ega mavzularda.",
+      "Yakuniy muhokama va tahlil bosqichida."
+    ],
+    "educationalValue": [
+      "Talabani murakkab vaziyatda fikrlash va qaror qabul qilishga tayyorlaydi."
+    ]
+  },
+  {
+    "id": "problem-based-learning",
+    "name": "Muammoli ta'lim",
+    "summary": "Darsni tayyor nazariyadan emas, muhim muammo va uni yechish ehtiyojidan boshlaydigan yondashuv.",
+    "group": "tahlil-va-muammo",
+    "groupTitle": "Tahlil va muammo yechish metodlari",
+    "groupDescription": "Talabani real vaziyat, muammo va qaror qabul qilish jarayoniga olib kiradigan metodlar.",
+    "level": "O'rta",
+    "focusArea": "Izlanish",
+    "tags": ["muammo", "izlanish", "mustaqillik"],
+    "description": [
+      "Muammoli ta'lim talabani tayyor ma'lumotni qabul qiluvchi emas, yechim izlovchi subyektga aylantiradi.",
+      "Informatika fanida bu metod algoritm tanlash, tizim dizayni yoki texnik nosozlikni tushuntirish mavzularida ayniqsa samarali."
+    ],
+    "advantages": [
+      "Mustaqillik va izlanishni kuchaytiradi.",
+      "Tahliliy va tanqidiy fikrlashni rivojlantiradi.",
+      "Bilimni qo'llashni markazga olib chiqadi."
+    ],
+    "disadvantages": [
+      "Tayyorgarligi sust bo'lgan talaba uchun qiyin bo'lishi mumkin.",
+      "O'qituvchidan kuchli fasilitatsiya va rejalashtirish talab qiladi."
+    ],
+    "useCase": [
+      "Kutubxona tizimi uchun samarali qidiruv usulini ishlab chiqish.",
+      "Berilgan dastur nega sekin ishlayotganini bosqichma-bosqich aniqlash."
+    ],
+    "whenToUse": [
+      "Chuqur o'rganish talab qiladigan mavzularda.",
+      "Bir nechta yechimli vazifalarda."
+    ],
+    "educationalValue": [
+      "Barqaror tushuncha va mantiqiy yechim ishlab chiqish ko'nikmasini rivojlantiradi."
+    ]
+  },
+  {
+    "id": "quiz-based-learning",
+    "name": "Quiz asosida o'qitish",
+    "summary": "Qisqa savollar orqali bilimni mustahkamlash va darhol feedback olishga qaratilgan metod.",
+    "group": "tahlil-va-muammo",
+    "groupTitle": "Tahlil va muammo yechish metodlari",
+    "groupDescription": "Talabani real vaziyat, muammo va qaror qabul qilish jarayoniga olib kiradigan metodlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "Tezkor baholash",
+    "tags": ["quiz", "feedback", "mustahkamlash"],
+    "description": [
+      "Quiz asosidagi o'qitish tushunishni tekshirish, xotirani mustahkamlash va dars davomida faollikni saqlash uchun qo'llanadi.",
+      "Informatikada terminlar, qurilmalar, algoritm bosqichlari yoki xavfsizlik qoidalarini takrorlashda juda foydali."
+    ],
+    "advantages": [
+      "Darhol fikr-mulohaza beradi.",
+      "Bilimdagi bo'shliqlarni tez aniqlaydi.",
+      "Takrorlashni qiziqarli formatga keltiradi."
+    ],
+    "disadvantages": [
+      "Noto'g'ri tuzilsa faqat yodlashga tayanib qolishi mumkin.",
+      "Agar faqat ballga urg'u berilsa, bosim hosil qiladi."
+    ],
+    "useCase": [
+      "Hardware va software farqi bo'yicha tezkor test.",
+      "Dars oxirida 5 savollik mini tekshiruv."
+    ],
+    "whenToUse": [
+      "Oraliq tekshiruvda.",
+      "Takrorlash va mustahkamlash bosqichida."
+    ],
+    "educationalValue": [
+      "Yodga tushirish strategiyasi orqali bilimni barqarorlashtiradi."
+    ]
+  },
+  {
+    "id": "project-based-learning",
+    "name": "Loyiha asosida o'qitish",
+    "summary": "Yakuniy mahsulot yaratish jarayonida bilim va ko'nikmalarni bosqichma-bosqich rivojlantiradigan metod.",
+    "group": "hamkorlik-va-mahsulot",
+    "groupTitle": "Hamkorlik va mahsulotga yo'naltirilgan metodlar",
+    "groupDescription": "Jamoaviy ish, mahsulot yaratish va taqdimotga yo'naltirilgan interaktiv metodlar.",
+    "level": "O'rta",
+    "focusArea": "Mahsulot yaratish",
+    "tags": ["loyiha", "mahsulot", "taqdimot"],
+    "description": [
+      "Loyiha asosida o'qitish talabalarni amaliy natijaga olib boradigan uzoqroq va mazmunli vazifa atrofida birlashtiradi.",
+      "Informatikada bu metod mobil ilova, veb sahifa, dashboard yoki ta'limiy resurs yaratish bilan bog'liq vazifalarda ayniqsa samarali."
+    ],
+    "advantages": [
+      "Nazariya va amaliyotni birlashtiradi.",
+      "Mas'uliyat va ijodkorlikni oshiradi.",
+      "Taqdimot va mahsulot fikrlashini shakllantiradi."
+    ],
+    "disadvantages": [
+      "Vaqt va boshqaruv talab qiladi.",
+      "Baholash mezonlari oldindan aniq bo'lishi kerak."
+    ],
+    "useCase": [
+      "Ta'limiy mobil ilova konseptini ishlab chiqish.",
+      "Maktab uchun axborot sahifasi yaratish."
+    ],
+    "whenToUse": [
+      "Yakuniy mahsulot talab qilinadigan mavzularda.",
+      "Bir nechta darsni bog'lovchi modul yakunida."
+    ],
+    "educationalValue": [
+      "Kompetensiyaga asoslangan o'qitishni kuchaytiradi va real ish jarayoniga tayyorlaydi."
+    ]
+  },
+  {
+    "id": "method-gamification",
+    "name": "Gamifikatsiya",
+    "summary": "Ta'lim jarayoniga o'yin mexanikasi, rag'bat va progress elementlarini kiritadigan metod.",
+    "group": "hamkorlik-va-mahsulot",
+    "groupTitle": "Hamkorlik va mahsulotga yo'naltirilgan metodlar",
+    "groupDescription": "Jamoaviy ish, mahsulot yaratish va taqdimotga yo'naltirilgan interaktiv metodlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "Motivatsiya",
+    "tags": ["gamifikatsiya", "motivatsiya", "progress"],
+    "description": [
+      "Gamifikatsiya ta'lim jarayonini to'liq o'yinga aylantirmaydi, balki undagi foydali mexanikalarni o'quv maqsadi bilan uyg'unlashtiradi.",
+      "Informatika fanida challenge, badge, daraja, progress paneli va mini tanlovlar ayniqsa samarali ishlaydi."
+    ],
+    "advantages": [
+      "Motivatsiya va qat'iyatni oshiradi.",
+      "Takroriy mashqlarni qiziqarli qiladi.",
+      "Natijani ko'rinadigan shaklda taqdim etadi."
+    ],
+    "disadvantages": [
+      "Mukofot tizimi noto'g'ri qurilsa mazmundan chalg'itishi mumkin.",
+      "Ba'zi talabalar raqobatga ortiqcha e'tibor qaratishi mumkin."
+    ],
+    "useCase": [
+      "Debugging mashqlari uchun badge tizimi joriy etish.",
+      "Quiz bo'limida daraja va progress indikatoridan foydalanish."
+    ],
+    "whenToUse": [
+      "Takrorlash mashqlarida.",
+      "Qisqa challenge va mini o'yinlarda."
+    ],
+    "educationalValue": [
+      "Hissiy jalb etish va muntazam mashq odatini kuchaytiradi."
+    ]
+  },
+  {
+    "id": "flashcard-method",
+    "name": "Flashcard metodi",
+    "summary": "Termin va tushunchalarni tez yodga tushirish uchun kartochkalardan foydalanishga asoslangan metod.",
+    "group": "hamkorlik-va-mahsulot",
+    "groupTitle": "Hamkorlik va mahsulotga yo'naltirilgan metodlar",
+    "groupDescription": "Jamoaviy ish, mahsulot yaratish va taqdimotga yo'naltirilgan interaktiv metodlar.",
+    "level": "Boshlang'ich",
+    "focusArea": "Takrorlash",
+    "tags": ["flashcard", "termin", "takrorlash"],
+    "description": [
+      "Flashcardlar qisqa ta'rif, termin va misollarni tez ko'rib chiqish hamda eslab qolish uchun qulay vositadir.",
+      "Informatika fanida terminologiya, qurilmalar vazifasi, dasturlash tushunchalari va xavfsizlik qoidalarini takrorlashda samarali bo'ladi."
+    ],
+    "advantages": [
+      "Tez va ko'chma takrorlash imkonini beradi.",
+      "Mustaqil self-test uchun juda qulay.",
+      "Spaced repetition odatini shakllantiradi."
+    ],
+    "disadvantages": [
+      "Murakkab muammo yechish ko'nikmasini yakka holda rivojlantirmaydi.",
+      "Juda qisqa ta'riflar yuzaki o'rganishga olib kelishi mumkin."
+    ],
+    "useCase": [
+      "Algoritm, multimedia va tarmoq terminlarini takrorlash.",
+      "Imtihon oldidan tezkor mustahkamlash."
+    ],
+    "whenToUse": [
+      "Warm-up mashqlarida.",
+      "Darsdan keyingi mustaqil takrorlashda."
+    ],
+    "educationalValue": [
+      "Ishonch va tez yodga tushirish ko'nikmasini rivojlantiradi."
+    ]
+  },
+  {
+    "id": "collaborative-learning",
+    "name": "Hamkorlikda o'qitish",
+    "summary": "Umumiy maqsad asosida jamoaviy o'rganish va birgalikda mas'uliyat olish metodi.",
+    "group": "hamkorlik-va-mahsulot",
+    "groupTitle": "Hamkorlik va mahsulotga yo'naltirilgan metodlar",
+    "groupDescription": "Jamoaviy ish, mahsulot yaratish va taqdimotga yo'naltirilgan interaktiv metodlar.",
+    "level": "O'rta",
+    "focusArea": "Jamoaviy ish",
+    "tags": ["hamkorlik", "jamoa", "birgalikda"],
+    "description": [
+      "Hamkorlikda o'qitishda talabalar umumiy maqsad uchun birgalikda ishlaydi va yakuniy natija uchun mas'uliyatni bo'lishadi.",
+      "Informatika darsida bu metod real ish muhitiga yaqin bo'lib, loyiha, review va taqdimot vazifalarida juda foydalidir."
+    ],
+    "advantages": [
+      "Muloqot va o'zaro yordamni kuchaytiradi.",
+      "Turli yechim strategiyalarini ko'rish imkonini beradi.",
+      "Jamoaviy mas'uliyatni rivojlantiradi."
+    ],
+    "disadvantages": [
+      "Yaxshi tuzilma bo'lmasa ishtirok notekis bo'lishi mumkin.",
+      "Baholash jarayoni murakkablashadi."
+    ],
+    "useCase": [
+      "Guruh bo'lib o'quv ilovasi interfeysini rejalashtirish.",
+      "Peer review orqali loyiha sifatini oshirish."
+    ],
+    "whenToUse": [
+      "Loyiha va amaliy topshiriqlarda.",
+      "Case study va mahsulot yaratish bosqichida."
+    ],
+    "educationalValue": [
+      "Kasbiy hamkorlik madaniyatini va birgalikda muammo yechish ko'nikmasini rivojlantiradi."
+    ]
+  }
+]

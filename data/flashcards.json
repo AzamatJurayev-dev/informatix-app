@@ -1,0 +1,50 @@
+[
+  {
+    "id": "algorithm",
+    "term": "Algoritm",
+    "definition": "Muammoni hal qilish yoki vazifani bajarish uchun ketma-ket bajariladigan aniq qadamlar majmui.",
+    "example": "Saralash algoritmi ma'lumotlarni kichikdan kattaga tartiblaydi."
+  },
+  {
+    "id": "multimedia",
+    "term": "Multimedia",
+    "definition": "Bitta ta'lim resursida matn, audio, rasm, video va animatsiyaning birgalikda qo'llanilishi.",
+    "example": "Offline dars tarkibida matn, diagramma va qisqa animatsiyalar bo'lishi mumkin."
+  },
+  {
+    "id": "gamification-card",
+    "term": "Gamifikatsiya",
+    "definition": "Ta'lim jarayonida ball, daraja va mukofot kabi o'yin mexanikalaridan foydalanish.",
+    "example": "Talabalar topshiriqni bajargani uchun badge yoki ball oladi."
+  },
+  {
+    "id": "innovative-approach-card",
+    "term": "Innovatsion yondashuv",
+    "definition": "Ta'limni faol, mazmunli va samarali tashkil etishga qaratilgan zamonaviy usul.",
+    "example": "O'qituvchi bitta mavzuda muhokama, simulyatsiya va mini loyihani birlashtiradi."
+  },
+  {
+    "id": "interactive-method-card",
+    "term": "Interaktiv metod",
+    "definition": "Faol ishtirok, fikr almashish yoki hamkorlikka asoslangan o'qitish usuli.",
+    "example": "Informatika darsida aqliy hujum yoki case study qo'llanadi."
+  },
+  {
+    "id": "computer-network",
+    "term": "Kompyuter tarmog'i",
+    "definition": "Ma'lumot va resurs almasha oladigan o'zaro bog'langan qurilmalar tizimi.",
+    "example": "Maktab laboratoriyasidagi tarmoq printer va fayllardan umumiy foydalanishni ta'minlaydi."
+  },
+  {
+    "id": "programming",
+    "term": "Dasturlash",
+    "definition": "Kompyuter bajarishi mumkin bo'lgan ko'rsatmalarni yaratish jarayoni.",
+    "example": "Talabalar o'rtacha qiymatni hisoblaydigan dastur yozadi."
+  },
+  {
+    "id": "digital-resources",
+    "term": "Raqamli ta'lim resurslari",
+    "definition": "Taqdimot, video, simulyatsiya va quiz kabi elektron ta'lim materiallari.",
+    "example": "Offline quiz ilovasi raqamli ta'lim resursiga misol bo'ladi."
+  }
+]
