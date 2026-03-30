@@ -19,11 +19,11 @@ export function SectionTitle({ title, subtitle, action }: SectionTitleProps) {
             Bo'lim
           </Text>
         </View>
-        <Text className="mt-2 text-[26px] font-black leading-8" style={{ color: colors.text }}>
+        <Text className="mt-3 text-[26px] font-black leading-8 tracking-[-0.4px]" style={{ color: colors.text }}>
           {title}
         </Text>
         {subtitle ? (
-          <Text className="mt-2 max-w-[340px] text-[14px] leading-6" style={{ color: colors.secondaryText }}>
+          <Text className="mt-2 max-w-[720px] text-[14px] leading-6" style={{ color: colors.secondaryText }}>
             {subtitle}
           </Text>
         ) : null}

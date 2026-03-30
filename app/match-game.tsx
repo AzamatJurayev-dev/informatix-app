@@ -15,11 +15,12 @@ function shuffle<T>(items: T[]) {
 
 export default function MatchGameScreen() {
   const colors = useThemeColors();
-  const { saveMatchScore, matchBestScore } = useAppState();
+  const { saveMatchScore, matchBestScore, theme } = useAppState();
   const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
   const [selectedDefinition, setSelectedDefinition] = useState<string | null>(null);
   const [solvedIds, setSolvedIds] = useState<string[]>([]);
   const [message, setMessage] = useState("Bitta termin va bitta tarifni tanlang.");
+  const solvedBackground = theme === "dark" ? `${colors.success}24` : "#dcfce7";
   const terms = useMemo(() => shuffle(games.matchingPairs), []);
   const definitions = useMemo(
     () => shuffle(games.matchingPairs.map((pair) => ({ id: pair.id, definition: pair.definition }))),
@@ -96,7 +97,7 @@ export default function MatchGameScreen() {
           className="mb-3 rounded-[26px] border px-4 py-4"
           style={{
             backgroundColor: solvedIds.includes(item.id)
-              ? "#dcfce7"
+              ? solvedBackground
               : selectedTerm === item.id
                 ? colors.accentSoft
                 : colors.surface,
@@ -118,7 +119,7 @@ export default function MatchGameScreen() {
           className="mb-3 rounded-[26px] border px-4 py-4"
           style={{
             backgroundColor: solvedIds.includes(item.id)
-              ? "#dcfce7"
+              ? solvedBackground
               : selectedDefinition === item.id
                 ? colors.accentSoft
                 : colors.surface,

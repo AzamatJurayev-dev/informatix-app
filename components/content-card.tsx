@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View } from "react-native";
+import { StyleProp, Text, View, ViewStyle } from "react-native";
 import { BaseCard } from "@/components/base-card";
 import { useThemeColors } from "@/hooks/useThemeColors";
 
@@ -10,6 +10,7 @@ type ContentCardProps = {
   icon: keyof typeof Ionicons.glyphMap;
   onPress: () => void;
   trailingLabel?: string;
+  style?: StyleProp<ViewStyle>;
 };
 export function ContentCard({
   title,
@@ -18,11 +19,14 @@ export function ContentCard({
   icon,
   onPress,
   trailingLabel,
+  style,
 }: ContentCardProps) {
   const colors = useThemeColors();
+  const actionBackground = colors.text;
+  const actionIconColor = colors.surface;
 
   return (
-    <BaseCard onPress={onPress} animated marginBottom={16}>
+    <BaseCard onPress={onPress} animated marginBottom={16} style={style as ViewStyle}>
         <View className="flex-row items-start justify-between">
           <View className="flex-row items-center">
             <View
@@ -64,8 +68,8 @@ export function ContentCard({
               {meta}
             </Text>
           </View>
-          <View className="h-11 w-11 items-center justify-center rounded-full" style={{ backgroundColor: "#161c2f" }}>
-            <Ionicons name="arrow-forward" size={16} color="#ffffff" />
+          <View className="h-11 w-11 items-center justify-center rounded-full" style={{ backgroundColor: actionBackground }}>
+            <Ionicons name="arrow-forward" size={16} color={actionIconColor} />
           </View>
         </View>
     </BaseCard>

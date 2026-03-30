@@ -55,7 +55,7 @@ export default function SearchScreen() {
       />
 
       <View
-        className="rounded-[34px] border bg-white p-6"
+        className="rounded-[34px] border p-6"
         style={{
           backgroundColor: colors.surface,
           borderColor: colors.cardBorder,

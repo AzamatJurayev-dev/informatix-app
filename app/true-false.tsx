@@ -12,12 +12,40 @@ import { useThemeColors } from "@/hooks/useThemeColors";
 
 export default function TrueFalseScreen() {
   const colors = useThemeColors();
-  const { saveTrueFalseResult } = useAppState();
+  const { saveTrueFalseResult, theme } = useAppState();
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [locked, setLocked] = useState(false);
   const current = games.trueFalseStatements[index];
+  const feedbackBackground =
+    feedback?.startsWith("To'g'ri.")
+      ? theme === "dark"
+        ? `${colors.success}18`
+        : "#f0fdf4"
+      : feedback
+        ? theme === "dark"
+          ? "rgba(127,29,29,0.22)"
+          : "#fff7f7"
+        : colors.mutedSurface;
+  const feedbackBorder =
+    feedback?.startsWith("To'g'ri.")
+      ? `${colors.success}55`
+      : feedback
+        ? theme === "dark"
+          ? "#7f1d1d"
+          : "#fecaca"
+        : colors.cardBorder;
+  const feedbackText =
+    feedback?.startsWith("To'g'ri.")
+      ? theme === "dark"
+        ? colors.text
+        : colors.secondaryText
+      : feedback
+        ? theme === "dark"
+          ? colors.text
+          : colors.secondaryText
+        : colors.secondaryText;
 
   async function handleAnswer(answer: boolean) {
     if (locked) {
@@ -74,8 +102,8 @@ export default function TrueFalseScreen() {
         </Text>
 
         {feedback ? (
-          <View className="mt-5 rounded-[20px] px-4 py-4" style={{ backgroundColor: colors.mutedSurface }}>
-            <Text className="text-sm leading-6" style={{ color: colors.secondaryText }}>
+          <View className="mt-5 rounded-[20px] border px-4 py-4" style={{ backgroundColor: feedbackBackground, borderColor: feedbackBorder }}>
+            <Text className="text-sm leading-6" style={{ color: feedbackText }}>
               {feedback}
             </Text>
           </View>

@@ -7,7 +7,7 @@ export function EmptyState({ title, message }: { title: string; message: string 
 
   return (
     <View
-      className="overflow-hidden rounded-[32px] border bg-white px-6 py-8"
+      className="overflow-hidden rounded-[32px] border px-6 py-8"
       style={{
         borderColor: colors.cardBorder,
         backgroundColor: colors.surface,

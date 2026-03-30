@@ -1,5 +1,5 @@
 import { router, useLocalSearchParams } from "expo-router";
-import { Text, View } from "react-native";
+import { Text, useWindowDimensions, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, {
   interpolate,
@@ -14,6 +14,7 @@ import { IconButton } from "@/components/icon-button";
 import { InfoCard } from "@/components/info-card";
 import { useAppState } from "@/context/app-context";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import { getContentMaxWidth, getGridColumns, getScreenPadding } from "@/utils/layout";
 
 export default function MethodDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -21,6 +22,11 @@ export default function MethodDetailScreen() {
   const colors = useThemeColors();
   const { isFavorite, toggleFavorite } = useAppState();
   const scrollY = useSharedValue(0);
+  const { width } = useWindowDimensions();
+  const contentMaxWidth = getContentMaxWidth(width);
+  const horizontalPadding = getScreenPadding(width);
+  const statColumns = getGridColumns(width, 240, 2);
+  const statCardWidth = statColumns === 2 ? "48.5%" : "100%";
 
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (event) => {
@@ -49,15 +55,16 @@ export default function MethodDetailScreen() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
       <Animated.View
-        className="absolute left-0 right-0 top-0 z-20 px-5 pb-4 pt-2"
+        className="absolute left-0 right-0 top-0 z-20 pb-4 pt-2"
         style={[
           topBarStyle,
           {
             backgroundColor: colors.background,
+            paddingHorizontal: horizontalPadding,
           },
         ]}
       >
-        <View className="w-full self-center" style={{ maxWidth: 430 }}>
+        <View className="w-full self-center" style={{ maxWidth: contentMaxWidth }}>
           <View className="flex-row items-center justify-between rounded-[24px] border px-3 py-3" style={{ backgroundColor: `${colors.surface}F2`, borderColor: `${colors.cardBorder}CC`, shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 16, shadowOffset: { width: 0, height: 8 }, elevation: 8 }}>
             <View className="mr-4 flex-1 flex-row items-center">
               <IconButton icon="arrow-back" onPress={() => router.back()} variant="soft" />
@@ -81,7 +88,7 @@ export default function MethodDetailScreen() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingTop: 96, paddingBottom: 40 }}
       >
-        <View className="w-full self-center px-5" style={{ maxWidth: 430 }}>
+        <View className="w-full self-center" style={{ maxWidth: contentMaxWidth, paddingHorizontal: horizontalPadding }}>
           <InfoCard className="mb-5">
             <View className="flex-row items-start justify-between">
               <View className="flex-1 pr-3">
@@ -103,8 +110,8 @@ export default function MethodDetailScreen() {
               </View>
             </View>
 
-            <View className="mt-6 flex-row gap-3">
-              <View className="flex-1 rounded-[22px] px-4 py-4" style={{ backgroundColor: colors.mutedSurface }}>
+            <View className="mt-6 flex-row flex-wrap justify-between">
+              <View className="rounded-[22px] px-4 py-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
                 <Text className="text-[11px] font-bold uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>
                   Kategoriya
                 </Text>
@@ -112,7 +119,7 @@ export default function MethodDetailScreen() {
                   {method.groupTitle}
                 </Text>
               </View>
-              <View className="flex-1 rounded-[22px] px-4 py-4" style={{ backgroundColor: colors.mutedSurface }}>
+              <View className="rounded-[22px] px-4 py-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
                 <Text className="text-[11px] font-bold uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>
                   Format
                 </Text>

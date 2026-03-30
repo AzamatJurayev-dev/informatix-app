@@ -14,11 +14,15 @@ import { useThemeColors } from "@/hooks/useThemeColors";
 
 export default function QuizScreen() {
   const colors = useThemeColors();
-  const { saveQuizResult } = useAppState();
+  const { saveQuizResult, theme } = useAppState();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [locked, setLocked] = useState(false);
+  const correctGradient = theme === "dark" ? ([`${colors.success}55`, `${colors.success}22`] as const) : (["#dcfce7", "#bbf7d0"] as const);
+  const wrongGradient = theme === "dark" ? (["#7f1d1d", "#3f1d1d"] as const) : (["#fee2e2", "#fecaca"] as const);
+  const correctSurface = theme === "dark" ? `${colors.success}18` : "#f0fdf4";
+  const wrongSurface = theme === "dark" ? "rgba(127,29,29,0.22)" : "#fff7f7";
 
   const question = useMemo(() => quizzes[currentIndex], [currentIndex]);
   const progressValue = ((currentIndex + 1) / quizzes.length) * 100;
@@ -64,8 +68,9 @@ export default function QuizScreen() {
 
       <Animated.View entering={FadeInDown.duration(400)}>
         <View
-          className="overflow-hidden rounded-[34px] border bg-white p-6"
+          className="overflow-hidden rounded-[34px] border p-6"
           style={{
+            backgroundColor: colors.surface,
             borderColor: colors.cardBorder,
             shadowColor: "#0f172a",
             shadowOpacity: 0.07,
@@ -132,9 +137,9 @@ export default function QuizScreen() {
               const isWrongSelected = locked && isSelected && !isCorrect;
               const optionGradient: readonly [string, string] =
                 isCorrect && locked
-                  ? ["#dcfce7", "#bbf7d0"]
+                  ? correctGradient
                   : isWrongSelected
-                    ? ["#fee2e2", "#fecaca"]
+                    ? wrongGradient
                     : isSelected
                       ? [colors.accent, colors.success]
                       : [`${colors.surface}FA`, colors.mutedSurface];
@@ -149,9 +154,9 @@ export default function QuizScreen() {
                           isSelected && !locked
                             ? `${colors.accent}14`
                             : isCorrect && locked
-                              ? "#f0fdf4"
+                              ? correctSurface
                               : isWrongSelected
-                                ? "#fff7f7"
+                                ? wrongSurface
                                 : colors.surface,
                       }}
                     >

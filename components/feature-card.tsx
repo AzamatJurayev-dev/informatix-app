@@ -12,6 +12,8 @@ type FeatureCardProps = {
 };
 export function FeatureCard({ title, description, icon, onPress, style }: FeatureCardProps) {
   const colors = useThemeColors();
+  const actionBackground = colors.text;
+  const actionIconColor = colors.surface;
 
   return (
     <BaseCard onPress={onPress} animated radius={36} padding={24} minHeight={204} style={style as ViewStyle}>
@@ -29,8 +31,8 @@ export function FeatureCard({ title, description, icon, onPress, style }: Featur
               </Text>
             </View>
           </View>
-          <View className="h-10 w-10 items-center justify-center rounded-full" style={{ backgroundColor: "#161c2f" }}>
-            <Ionicons name="arrow-forward" size={16} color="#ffffff" />
+          <View className="h-10 w-10 items-center justify-center rounded-full" style={{ backgroundColor: actionBackground }}>
+            <Ionicons name="arrow-forward" size={16} color={actionIconColor} />
           </View>
         </View>
 

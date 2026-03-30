@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
-import { ScrollView, View } from "react-native";
+import { ScrollView, useWindowDimensions, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import { getContentMaxWidth, getScreenPadding } from "@/utils/layout";
 
 type ScreenShellProps = {
   children: ReactNode;
@@ -12,9 +13,15 @@ type ScreenShellProps = {
 
 export function ScreenShell({ children, scroll = true, withGradient = false }: ScreenShellProps) {
   const colors = useThemeColors();
+  const { width } = useWindowDimensions();
+  const contentMaxWidth = getContentMaxWidth(width);
+  const horizontalPadding = getScreenPadding(width);
 
   const content = (
-    <View className="min-h-full w-full px-5 pt-3" style={{ maxWidth: 430, alignSelf: "center" }}>
+    <View
+      className="min-h-full w-full pt-3"
+      style={{ maxWidth: contentMaxWidth, alignSelf: "center", paddingHorizontal: horizontalPadding }}
+    >
       <View className="absolute -right-24 top-16 h-56 w-56 rounded-full" style={{ backgroundColor: `${colors.accent}10` }} />
       <View className="absolute -left-28 top-80 h-72 w-72 rounded-full" style={{ backgroundColor: `${colors.success}0A` }} />
       <View className="absolute right-4 bottom-24 h-36 w-36 rounded-full" style={{ backgroundColor: `${colors.warning}08` }} />

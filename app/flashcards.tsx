@@ -17,11 +17,18 @@ import { useThemeColors } from "@/hooks/useThemeColors";
 
 export default function FlashcardsScreen() {
   const colors = useThemeColors();
-  const { markFlashcardViewed, viewedFlashcards } = useAppState();
+  const { markFlashcardViewed, viewedFlashcards, theme } = useAppState();
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const rotate = useSharedValue(0);
   const current = flashcards[index];
+  const flashcardGradient = theme === "dark"
+    ? ([colors.surface, colors.mutedSurface, colors.accent] as const)
+    : (["#161c2f", "#26324a", "#1f6fff"] as const);
+  const flashcardChipBackground = theme === "dark" ? `${colors.surface}26` : "rgba(255,255,255,0.15)";
+  const flashcardChipBorder = theme === "dark" ? `${colors.cardBorder}66` : "rgba(255,255,255,0.15)";
+  const flashcardText = "#ffffff";
+  const flashcardSubtle = theme === "dark" ? "rgba(255,255,255,0.78)" : "#f1f5f9";
 
   useEffect(() => {
     markFlashcardViewed(current.id);
@@ -92,26 +99,26 @@ export default function FlashcardsScreen() {
       <Pressable onPress={toggleFlip}>
         <View className="h-80">
           <Animated.View style={frontStyle}>
-            <LinearGradient colors={["#161c2f", "#26324a", "#1f6fff"]} className="h-80 overflow-hidden rounded-[34px] p-6">
-              <View className="absolute -right-8 top-4 h-36 w-36 rounded-full bg-white/10" />
-              <View className="absolute -left-8 bottom-0 h-28 w-28 rounded-full bg-cyan-300/10" />
-              <View className="self-start rounded-full bg-white/15 px-4 py-2">
-                <Text className="text-xs font-bold uppercase tracking-[2px] text-white">Old tomoni</Text>
+            <LinearGradient colors={flashcardGradient} className="h-80 overflow-hidden rounded-[34px] p-6">
+              <View className="absolute -right-8 top-4 h-36 w-36 rounded-full" style={{ backgroundColor: "rgba(255,255,255,0.08)" }} />
+              <View className="absolute -left-8 bottom-0 h-28 w-28 rounded-full" style={{ backgroundColor: `${colors.success}22` }} />
+              <View className="self-start rounded-full px-4 py-2" style={{ backgroundColor: flashcardChipBackground }}>
+                <Text className="text-xs font-bold uppercase tracking-[2px]" style={{ color: flashcardText }}>Old tomoni</Text>
               </View>
               <View className="mt-8 flex-row items-start justify-between">
-                <View className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-4">
-                  <Text className="text-3xl font-black text-white">IT</Text>
+                <View className="rounded-[24px] border px-4 py-4" style={{ borderColor: flashcardChipBorder, backgroundColor: flashcardChipBackground }}>
+                  <Text className="text-3xl font-black" style={{ color: flashcardText }}>IT</Text>
                 </View>
-                <View className="rounded-full bg-white/10 px-3 py-2">
-                  <Text className="text-[11px] font-bold uppercase tracking-[2px] text-white/80">
+                <View className="rounded-full px-3 py-2" style={{ backgroundColor: flashcardChipBackground }}>
+                  <Text className="text-[11px] font-bold uppercase tracking-[2px]" style={{ color: flashcardSubtle }}>
                     {index + 1}/{flashcards.length}
                   </Text>
                 </View>
               </View>
-              <Text className="mt-14 text-center text-3xl font-black text-white">
+              <Text className="mt-14 text-center text-3xl font-black" style={{ color: flashcardText }}>
                 {current.term}
               </Text>
-              <Text className="mt-5 text-center text-sm leading-6 text-slate-100">
+              <Text className="mt-5 text-center text-sm leading-6" style={{ color: flashcardSubtle }}>
                 Izohni ko'rish uchun kartani bosing.
               </Text>
             </LinearGradient>

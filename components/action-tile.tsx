@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View } from "react-native";
+import { StyleProp, Text, View, ViewStyle } from "react-native";
 import { BaseCard } from "@/components/base-card";
 import { useThemeColors } from "@/hooks/useThemeColors";
 
@@ -9,13 +9,14 @@ type ActionTileProps = {
   icon: keyof typeof Ionicons.glyphMap;
   onPress: () => void;
   fullWidth?: boolean;
+  style?: StyleProp<ViewStyle>;
 };
 
-export function ActionTile({ title, subtitle, icon, onPress, fullWidth = false }: ActionTileProps) {
+export function ActionTile({ title, subtitle, icon, onPress, fullWidth = false, style }: ActionTileProps) {
   const colors = useThemeColors();
 
   return (
-    <BaseCard onPress={onPress} animated className={`mb-3 ${fullWidth ? "w-full" : "w-[48%]"}`} radius={30} padding={16}>
+    <BaseCard onPress={onPress} animated className={`mb-3 ${fullWidth ? "w-full" : ""}`} radius={30} padding={16} style={style as ViewStyle}>
         <View className="px-4 py-4" style={{ minHeight: 170 }}>
           <View className="flex-row items-start justify-between">
             <View className="h-12 w-12 items-center justify-center rounded-[18px]" style={{ backgroundColor: colors.mutedSurface }}>

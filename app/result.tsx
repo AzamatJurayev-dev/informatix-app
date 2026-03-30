@@ -12,14 +12,21 @@ export default function ResultScreen() {
   const score = Number(params.score ?? 0);
   const total = Number(params.total ?? 0);
   const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
+  const resultTone =
+    percentage >= 80
+      ? { bg: `${colors.success}18`, border: `${colors.success}40`, label: "A'lo", color: colors.success }
+      : percentage >= 50
+        ? { bg: `${colors.accent}18`, border: `${colors.accent}40`, label: "Yaxshi", color: colors.accent }
+        : { bg: `${colors.warning}18`, border: `${colors.warning}40`, label: "Davom eting", color: colors.warning };
 
   return (
     <ScreenShell scroll={false}>
       <AppHeader title="Natija" subtitle="Yakuniy ko'rsatkichlar" eyebrow="Hisobot" />
       <View className="flex-1 justify-center">
         <View
-          className="overflow-hidden rounded-[36px] border bg-white p-6"
+          className="overflow-hidden rounded-[36px] border p-6"
           style={{
+            backgroundColor: colors.surface,
             borderColor: colors.cardBorder,
             shadowColor: "#0f172a",
             shadowOpacity: 0.08,
@@ -61,7 +68,18 @@ export default function ResultScreen() {
         </View>
 
         <InfoCard className="mt-4">
-          <Text className="text-center text-sm leading-6" style={{ color: colors.secondaryText }}>
+          <View className="rounded-[24px] border px-4 py-4" style={{ backgroundColor: resultTone.bg, borderColor: resultTone.border }}>
+            <Text className="text-[11px] font-bold uppercase tracking-[2px]" style={{ color: resultTone.color }}>
+              Natija holati
+            </Text>
+            <Text className="mt-2 text-lg font-black" style={{ color: colors.text }}>
+              {resultTone.label}
+            </Text>
+            <Text className="mt-2 text-sm leading-6" style={{ color: colors.secondaryText }}>
+              Natijangiz saqlandi va statistika bo'limiga qo'shildi.
+            </Text>
+          </View>
+          <Text className="mt-5 text-center text-sm leading-6" style={{ color: colors.secondaryText }}>
             Natijangiz saqlandi va statistika bo'limiga qo'shildi.
           </Text>
           <View className="mt-8 gap-3">

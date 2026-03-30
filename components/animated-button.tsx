@@ -2,6 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { Pressable, Text, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
+import { useAppState } from "@/context/app-context";
 import { useThemeColors } from "@/hooks/useThemeColors";
 
 type AnimatedButtonProps = {
@@ -26,6 +27,7 @@ export function AnimatedButton({
   contentClassName = "",
 }: AnimatedButtonProps) {
   const colors = useThemeColors();
+  const { theme } = useAppState();
   const scale = useSharedValue(1);
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -37,8 +39,8 @@ export function AnimatedButton({
   const gradientColors: Record<NonNullable<AnimatedButtonProps["variant"]>, readonly [string, string]> = {
     primary: [colors.accent, colors.success],
     secondary: [colors.surface, colors.surface],
-    success: [colors.success, "#34d399"],
-    danger: ["#ef4444", "#f97316"],
+    success: [colors.success, theme === "dark" ? colors.accent : "#34d399"],
+    danger: [theme === "dark" ? "#dc2626" : "#ef4444", theme === "dark" ? "#f97316" : "#fb7185"],
   };
 
   return (

@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import { Text, View } from "react-native";
+import { Text, useWindowDimensions, View } from "react-native";
 import lessons from "@/data/lessons.json";
 import methods from "@/data/methods.json";
 import { AppHeader } from "@/components/app-header";
@@ -11,10 +11,16 @@ import { SectionTitle } from "@/components/section-title";
 import { useAppState } from "@/context/app-context";
 import { useThemeColors } from "@/hooks/useThemeColors";
 import { Lesson, Method } from "@/types/content";
+import { getGridColumns } from "@/utils/layout";
 
 export default function FavoritesScreen() {
   const { favorites } = useAppState();
   const colors = useThemeColors();
+  const { width } = useWindowDimensions();
+  const statColumns = getGridColumns(width, 220, 2);
+  const contentColumns = getGridColumns(width, 320, 2);
+  const statCardWidth = statColumns === 2 ? "48%" : "100%";
+  const contentCardWidth = contentColumns === 2 ? "48.5%" : "100%";
   const favoriteLessons = (lessons as Lesson[]).filter((lesson) => favorites.some((item) => item.type === "lesson" && item.id === lesson.id));
   const favoriteMethods = (methods as Method[]).filter((method) => favorites.some((item) => item.type === "method" && item.id === method.id));
 
@@ -28,7 +34,7 @@ export default function FavoritesScreen() {
       />
 
       <View
-        className="rounded-[34px] border bg-white p-6"
+        className="rounded-[34px] border p-6"
         style={{
           backgroundColor: colors.surface,
           borderColor: colors.cardBorder,
@@ -52,21 +58,21 @@ export default function FavoritesScreen() {
           Keyinroq qaytib o'qish yoki taqdimot uchun belgilangan darslar va metodlar shu yerda jamlanadi.
         </Text>
 
-        <View className="mt-5 flex-row gap-3">
-          <View className="flex-1 rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface }}>
+        <View className="mt-5 flex-row flex-wrap justify-between">
+          <View className="rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
             <Text className="text-xs uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>Darslar</Text>
             <Text className="mt-2 text-2xl font-black" style={{ color: colors.text }}>{favoriteLessons.length}</Text>
           </View>
-          <View className="flex-1 rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface }}>
+          <View className="rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
             <Text className="text-xs uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>Metodlar</Text>
             <Text className="mt-2 text-2xl font-black" style={{ color: colors.text }}>{favoriteMethods.length}</Text>
           </View>
         </View>
       </View>
 
-      <View className="mt-6 flex-row gap-3">
-        <MetricCard label="Saqlangan darslar" value={`${favoriteLessons.length}`} accent={colors.accent} />
-        <MetricCard label="Saqlangan metodlar" value={`${favoriteMethods.length}`} accent={colors.success} />
+      <View className="mt-6 flex-row flex-wrap justify-between">
+        <MetricCard label="Saqlangan darslar" value={`${favoriteLessons.length}`} accent={colors.accent} style={{ width: statCardWidth }} />
+        <MetricCard label="Saqlangan metodlar" value={`${favoriteMethods.length}`} accent={colors.success} style={{ width: statCardWidth }} />
       </View>
 
       <View className="mt-4">
@@ -78,32 +84,38 @@ export default function FavoritesScreen() {
       {favoriteLessons.length > 0 ? (
         <View className="mt-2">
           <SectionTitle title="Saqlangan darslar" subtitle="Modul va yo'nalish bo'yicha belgilangan darslar" />
-          {favoriteLessons.map((lesson) => (
-            <ContentCard
-              key={lesson.id}
-              title={lesson.title}
-              description={lesson.description}
-              meta={`${lesson.moduleTitle} / ${lesson.focusArea}`}
-              icon="book-outline"
-              onPress={() => router.push(`/lesson/${lesson.id}` as never)}
-            />
-          ))}
+          <View className="flex-row flex-wrap justify-between">
+            {favoriteLessons.map((lesson) => (
+              <ContentCard
+                key={lesson.id}
+                title={lesson.title}
+                description={lesson.description}
+                meta={`${lesson.moduleTitle} / ${lesson.focusArea}`}
+                icon="book-outline"
+                onPress={() => router.push(`/lesson/${lesson.id}` as never)}
+                style={{ width: contentCardWidth }}
+              />
+            ))}
+          </View>
         </View>
       ) : null}
 
       {favoriteMethods.length > 0 ? (
         <View className="mt-2">
           <SectionTitle title="Saqlangan metodlar" subtitle="Kategoriya va amaliy fokus bo'yicha belgilangan metodlar" />
-          {favoriteMethods.map((method) => (
-            <ContentCard
-              key={method.id}
-              title={method.name}
-              description={method.summary}
-              meta={`${method.groupTitle} / ${method.focusArea}`}
-              icon="grid-outline"
-              onPress={() => router.push(`/method/${method.id}` as never)}
-            />
-          ))}
+          <View className="flex-row flex-wrap justify-between">
+            {favoriteMethods.map((method) => (
+              <ContentCard
+                key={method.id}
+                title={method.name}
+                description={method.summary}
+                meta={`${method.groupTitle} / ${method.focusArea}`}
+                icon="grid-outline"
+                onPress={() => router.push(`/method/${method.id}` as never)}
+                style={{ width: contentCardWidth }}
+              />
+            ))}
+          </View>
         </View>
       ) : null}
     </ScreenShell>

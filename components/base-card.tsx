@@ -32,6 +32,8 @@ export function BaseCard({
 }: BaseCardProps) {
   const colors = useThemeColors();
   const scale = useSharedValue(1);
+  const shadowOpacity = colors.background === "#0b1220" ? 0.16 : 0.07;
+  const shadowRadius = colors.background === "#0b1220" ? 22 : 18;
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
@@ -77,9 +79,9 @@ export function BaseCard({
           {
             marginBottom,
             shadowColor: "#0f172a",
-            shadowOpacity: 0.06,
-            shadowRadius: 18,
-            shadowOffset: { width: 0, height: 10 },
+            shadowOpacity,
+            shadowRadius,
+            shadowOffset: { width: 0, height: 12 },
             elevation: 5,
           },
           style,
@@ -98,9 +100,9 @@ export function BaseCard({
         {
           marginBottom,
           shadowColor: "#0f172a",
-          shadowOpacity: 0.06,
-          shadowRadius: 18,
-          shadowOffset: { width: 0, height: 10 },
+          shadowOpacity,
+          shadowRadius,
+          shadowOffset: { width: 0, height: 12 },
           elevation: 5,
         },
         style,

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, Text, useWindowDimensions, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
 import { AppTheme } from "@/constants/theme";
 import { useThemeColors } from "@/hooks/useThemeColors";
@@ -13,6 +13,13 @@ type ThemeToggleProps = {
 
 export function ThemeToggle({ value, onChange }: ThemeToggleProps) {
   const colors = useThemeColors();
+  const { width } = useWindowDimensions();
+  const toggleWidth = Math.min(Math.max(width - 80, 220), 320);
+  const segmentWidth = (toggleWidth - 12) / 2;
+  const activeColors =
+    value === "light"
+      ? (["#ffffff", "#e8f0ff"] as const)
+      : (["#161c2f", "#2d3650"] as const);
   const offset = useSharedValue(value === "light" ? 0 : 1);
 
   useEffect(() => {
@@ -20,13 +27,14 @@ export function ThemeToggle({ value, onChange }: ThemeToggleProps) {
   }, [offset, value]);
 
   const sliderStyle = useAnimatedStyle(() => ({
-    transform: [{ translateX: offset.value * 118 }],
+    transform: [{ translateX: offset.value * segmentWidth }],
   }));
 
   return (
     <View
-      className="relative w-full max-w-[248px] overflow-hidden rounded-full border p-1.5"
+      className="relative overflow-hidden rounded-full border p-1.5"
       style={{
+        width: toggleWidth,
         backgroundColor: colors.mutedSurface,
         borderColor: colors.cardBorder,
         shadowColor: "#0f172a",
@@ -36,17 +44,17 @@ export function ThemeToggle({ value, onChange }: ThemeToggleProps) {
         elevation: 2,
       }}
     >
-      <Animated.View className="absolute left-1.5 top-1.5 h-[50px] w-[118px] overflow-hidden rounded-full" style={sliderStyle}>
-        <LinearGradient colors={["#161c2f", "#2d3650"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} className="h-full w-full" />
+      <Animated.View className="absolute left-1.5 top-1.5 h-[50px] overflow-hidden rounded-full" style={[sliderStyle, { width: segmentWidth }]}>
+        <LinearGradient colors={activeColors} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} className="h-full w-full" />
       </Animated.View>
       <View className="flex-row">
-        <Pressable className="z-10 w-[118px] flex-row items-center justify-center rounded-full py-4" onPress={() => onChange("light")}>
-          <Ionicons name="sunny-outline" size={18} color={value === "light" ? "#ffffff" : colors.text} />
-          <Text className="ml-2 font-bold tracking-wide" style={{ color: value === "light" ? "#ffffff" : colors.text }}>
+        <Pressable className="z-10 flex-row items-center justify-center rounded-full py-4" style={{ width: segmentWidth }} onPress={() => onChange("light")}>
+          <Ionicons name="sunny-outline" size={18} color={value === "light" ? colors.text : colors.text} />
+          <Text className="ml-2 font-bold tracking-wide" style={{ color: value === "light" ? colors.text : colors.text }}>
             Yorug
           </Text>
         </Pressable>
-        <Pressable className="z-10 w-[118px] flex-row items-center justify-center rounded-full py-4" onPress={() => onChange("dark")}>
+        <Pressable className="z-10 flex-row items-center justify-center rounded-full py-4" style={{ width: segmentWidth }} onPress={() => onChange("dark")}>
           <Ionicons name="moon-outline" size={18} color={value === "dark" ? "#ffffff" : colors.text} />
           <Text className="ml-2 font-bold tracking-wide" style={{ color: value === "dark" ? "#ffffff" : colors.text }}>
             Qorong'i

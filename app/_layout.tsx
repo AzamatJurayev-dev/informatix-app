@@ -1,12 +1,14 @@
 import "../global.css";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { View } from "react-native";
+import { useWindowDimensions, View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { AppStateProvider, useAppState } from "@/context/app-context";
+import { getContentMaxWidth } from "@/utils/layout";
 
 function AppNavigator() {
   const { theme, colors } = useAppState();
+  const { width } = useWindowDimensions();
 
   return (
     <>
@@ -16,9 +18,8 @@ function AppNavigator() {
           style={{
             flex: 1,
             width: "100%",
-            maxWidth: 430,
+            maxWidth: getContentMaxWidth(width),
             alignSelf: "center",
-            overflow: "hidden",
             backgroundColor: colors.background,
           }}
         >

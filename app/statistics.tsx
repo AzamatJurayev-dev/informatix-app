@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Text, useWindowDimensions, View } from "react-native";
 import flashcards from "@/data/flashcards.json";
 import games from "@/data/games.json";
 import lessons from "@/data/lessons.json";
@@ -10,9 +10,13 @@ import { ProgressBar } from "@/components/progress-bar";
 import { ScreenShell } from "@/components/screen-shell";
 import { useAppState } from "@/context/app-context";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import { getGridColumns } from "@/utils/layout";
 
 export default function StatisticsScreen() {
   const colors = useThemeColors();
+  const { width } = useWindowDimensions();
+  const statColumns = getGridColumns(width, 220, 2);
+  const statCardWidth = statColumns === 2 ? "48%" : "100%";
   const {
     completedLessons,
     quizAttempts,
@@ -30,8 +34,9 @@ export default function StatisticsScreen() {
     <ScreenShell>
       <AppHeader title="Statistika" subtitle="Progress va natijalar bo'yicha umumiy tahlil" eyebrow="Tahlil" />
       <View
-        className="mb-5 overflow-hidden rounded-[34px] border bg-white p-6"
+        className="mb-5 overflow-hidden rounded-[34px] border p-6"
         style={{
+          backgroundColor: colors.surface,
           borderColor: colors.cardBorder,
           shadowColor: "#0f172a",
           shadowOpacity: 0.07,
@@ -52,8 +57,8 @@ export default function StatisticsScreen() {
         <Text className="mt-2 text-[15px] leading-7" style={{ color: colors.secondaryText }}>
           Darslar, testlar, flashcardlar va mini o'yinlardagi faoliyatingiz shu yerda jamlangan.
         </Text>
-        <View className="mt-5 flex-row gap-3">
-          <View className="flex-1 rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface }}>
+        <View className="mt-5 flex-row flex-wrap justify-between">
+          <View className="rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
             <Text className="text-[11px] font-bold uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>
               Umumiy progress
             </Text>
@@ -61,7 +66,7 @@ export default function StatisticsScreen() {
               {overallProgress}%
             </Text>
           </View>
-          <View className="flex-1 rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface }}>
+          <View className="rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
             <Text className="text-[11px] font-bold uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>
               Test jami
             </Text>
@@ -71,17 +76,17 @@ export default function StatisticsScreen() {
           </View>
         </View>
       </View>
-      <View className="flex-row gap-3">
-        <MetricCard label="Tugallangan darslar" value={`${completedLessons.length}/${lessons.length}`} accent={colors.accent} />
-        <MetricCard label="Test urinishlari" value={`${quizAttempts.length}`} accent={colors.success} />
+      <View className="flex-row flex-wrap justify-between">
+        <MetricCard label="Tugallangan darslar" value={`${completedLessons.length}/${lessons.length}`} accent={colors.accent} style={{ width: statCardWidth }} />
+        <MetricCard label="Test urinishlari" value={`${quizAttempts.length}`} accent={colors.success} style={{ width: statCardWidth }} />
       </View>
-      <View className="flex-row gap-3">
-        <MetricCard label="Ko'rilgan kartalar" value={`${viewedFlashcards.length}/${flashcards.length}`} accent={colors.warning} />
-        <MetricCard label="Eng yaxshi match" value={`${matchBestScore}/${games.matchingPairs.length}`} accent={colors.text} />
+      <View className="flex-row flex-wrap justify-between">
+        <MetricCard label="Ko'rilgan kartalar" value={`${viewedFlashcards.length}/${flashcards.length}`} accent={colors.warning} style={{ width: statCardWidth }} />
+        <MetricCard label="Eng yaxshi match" value={`${matchBestScore}/${games.matchingPairs.length}`} accent={colors.text} style={{ width: statCardWidth }} />
       </View>
-      <View className="flex-row gap-3">
-        <MetricCard label="Eng yaxshi test" value={`${highestQuizScore}/${quizzes.length}`} accent={colors.accent} />
-        <MetricCard label="T/F to'g'ri javoblar" value={`${totalTrueFalseCorrect}`} accent={colors.success} />
+      <View className="flex-row flex-wrap justify-between">
+        <MetricCard label="Eng yaxshi test" value={`${highestQuizScore}/${quizzes.length}`} accent={colors.accent} style={{ width: statCardWidth }} />
+        <MetricCard label="T/F to'g'ri javoblar" value={`${totalTrueFalseCorrect}`} accent={colors.success} style={{ width: statCardWidth }} />
       </View>
 
       <InfoCard className="mt-2">

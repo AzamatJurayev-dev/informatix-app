@@ -31,14 +31,14 @@ export function AppHeader({
   return (
     <View className="mb-5">
       <View
-        className="overflow-hidden rounded-[32px] border px-5 pb-5 pt-4"
+        className="overflow-hidden rounded-[34px] border px-5 pb-5 pt-4"
         style={{
           backgroundColor: colors.surface,
           borderColor: colors.cardBorder,
           shadowColor: "#0f172a",
-          shadowOpacity: 0.06,
-          shadowRadius: 16,
-          shadowOffset: { width: 0, height: 10 },
+          shadowOpacity: 0.08,
+          shadowRadius: 20,
+          shadowOffset: { width: 0, height: 12 },
           elevation: 4,
         }}
       >
@@ -77,7 +77,7 @@ export function AppHeader({
           {title}
           </Text>
           {subtitle ? (
-            <Text className="mt-2 max-w-[320px] text-[14px] leading-6" style={{ color: colors.secondaryText }}>
+            <Text className="mt-2 max-w-[680px] text-[14px] leading-6" style={{ color: colors.secondaryText }}>
               {subtitle}
             </Text>
           ) : null}

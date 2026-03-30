@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import { Text, View } from "react-native";
+import { Text, useWindowDimensions, View } from "react-native";
 import methods from "@/data/methods.json";
 import { AppHeader } from "@/components/app-header";
 import { ContentCard } from "@/components/content-card";
@@ -8,6 +8,7 @@ import { ScreenShell } from "@/components/screen-shell";
 import { SectionTitle } from "@/components/section-title";
 import { useThemeColors } from "@/hooks/useThemeColors";
 import { Method } from "@/types/content";
+import { getGridColumns } from "@/utils/layout";
 
 type MethodGroup = {
   group: string;
@@ -18,6 +19,11 @@ type MethodGroup = {
 
 export default function MethodsScreen() {
   const colors = useThemeColors();
+  const { width } = useWindowDimensions();
+  const statColumns = getGridColumns(width, 220, 2);
+  const contentColumns = getGridColumns(width, 320, 2);
+  const statCardWidth = statColumns === 2 ? "48%" : "100%";
+  const contentCardWidth = contentColumns === 2 ? "48.5%" : "100%";
 
   const groupedMethods = (methods as Method[]).reduce<MethodGroup[]>((groups, method) => {
     const existing = groups.find((group) => group.group === method.group);
@@ -49,7 +55,7 @@ export default function MethodsScreen() {
       />
 
       <View
-        className="overflow-hidden rounded-[34px] border bg-white p-6"
+        className="overflow-hidden rounded-[34px] border p-6"
         style={{
           backgroundColor: colors.surface,
           borderColor: colors.cardBorder,
@@ -82,21 +88,21 @@ export default function MethodsScreen() {
           </Text>
         </View>
 
-        <View className="mt-5 flex-row gap-3">
-          <View className="flex-1 rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface }}>
+        <View className="mt-5 flex-row flex-wrap justify-between">
+          <View className="rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
             <Text className="text-xs uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>Kategoriyalar</Text>
             <Text className="mt-2 text-2xl font-black" style={{ color: colors.text }}>{groupedMethods.length}</Text>
           </View>
-          <View className="flex-1 rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface }}>
+          <View className="rounded-[24px] p-4" style={{ backgroundColor: colors.mutedSurface, width: statCardWidth }}>
             <Text className="text-xs uppercase tracking-[2px]" style={{ color: colors.secondaryText }}>Metodlar</Text>
             <Text className="mt-2 text-2xl font-black" style={{ color: colors.text }}>{methods.length}</Text>
           </View>
         </View>
       </View>
 
-      <View className="mt-6 gap-3">
-        <MetricCard label="Jami metodlar" value={`${methods.length}`} accent={colors.accent} />
-        <MetricCard label="Kategoriya soni" value={`${groupedMethods.length}`} accent={colors.success} />
+      <View className="mt-6 flex-row flex-wrap justify-between">
+        <MetricCard label="Jami metodlar" value={`${methods.length}`} accent={colors.accent} style={{ width: statCardWidth }} />
+        <MetricCard label="Kategoriya soni" value={`${groupedMethods.length}`} accent={colors.success} style={{ width: statCardWidth }} />
       </View>
 
       <View className="mt-5">
@@ -122,17 +128,20 @@ export default function MethodsScreen() {
             </Text>
           </View>
 
-          {group.items.map((method) => (
-            <ContentCard
-              key={method.id}
-              title={method.name}
-              description={method.summary}
-              meta={`${method.focusArea} / ${method.level}`}
-              icon="grid-outline"
-              trailingLabel={method.level}
-              onPress={() => router.push(`/method/${method.id}` as never)}
-            />
-          ))}
+          <View className="flex-row flex-wrap justify-between">
+            {group.items.map((method) => (
+              <ContentCard
+                key={method.id}
+                title={method.name}
+                description={method.summary}
+                meta={`${method.focusArea} / ${method.level}`}
+                icon="grid-outline"
+                trailingLabel={method.level}
+                onPress={() => router.push(`/method/${method.id}` as never)}
+                style={{ width: contentCardWidth }}
+              />
+            ))}
+          </View>
         </View>
       ))}
     </ScreenShell>
