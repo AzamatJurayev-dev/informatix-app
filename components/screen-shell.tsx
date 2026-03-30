@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { ScrollView, useWindowDimensions, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { useThemeColors } from "@/hooks/useThemeColors";
 import { getContentMaxWidth, getScreenPadding } from "@/utils/layout";
 
@@ -14,8 +14,10 @@ type ScreenShellProps = {
 export function ScreenShell({ children, scroll = true, withGradient = false }: ScreenShellProps) {
   const colors = useThemeColors();
   const { width } = useWindowDimensions();
+  const insets = useSafeAreaInsets();
   const contentMaxWidth = getContentMaxWidth(width);
   const horizontalPadding = getScreenPadding(width);
+  const bottomPadding = 110 + Math.max(insets.bottom, 12);
 
   const content = (
     <View
@@ -30,11 +32,11 @@ export function ScreenShell({ children, scroll = true, withGradient = false }: S
   );
 
   return (
-    <SafeAreaView edges={["top"]} className="flex-1" style={{ backgroundColor: colors.background }}>
+    <SafeAreaView edges={["top", "bottom"]} className="flex-1" style={{ backgroundColor: colors.background }}>
       {withGradient ? (
         <LinearGradient colors={colors.gradient} className="flex-1">
           {scroll ? (
-            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 154 }}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: bottomPadding }}>
               {content}
             </ScrollView>
           ) : (
@@ -44,7 +46,7 @@ export function ScreenShell({ children, scroll = true, withGradient = false }: S
       ) : (
         <View className="flex-1" style={{ backgroundColor: colors.background }}>
           {scroll ? (
-            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 154 }}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: bottomPadding }}>
               {content}
             </ScrollView>
           ) : (
